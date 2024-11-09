@@ -15,3 +15,4 @@ Weekend development notes for Pyxis.
 - 2024-10-26: fix: drawer resize persistence in the web UI
 - 2024-11-02: refactor: tidy TUI navigation and keybindings
 - 2024-11-03: fix: stabilize metrics gauges under missing metrics-server
+- 2024-11-09: perf: reduce unnecessary list refreshes in TUI
