@@ -1,6 +1,6 @@
 module github.com/zrougamed/pyxis
 
-go 1.21.12
+go 1.22.10
 
 require (
 	github.com/charmbracelet/bubbles v0.18.0
@@ -8,7 +8,7 @@ require (
 	github.com/charmbracelet/lipgloss v0.12.1
 	github.com/gorilla/websocket v1.5.0
 	github.com/spf13/cobra v1.8.1
-	golang.org/x/oauth2 v0.21.0
+	golang.org/x/oauth2 v0.23.0
 	k8s.io/api v0.31.2
 	k8s.io/apiextensions-apiserver v0.31.2
 	k8s.io/apimachinery v0.31.2
