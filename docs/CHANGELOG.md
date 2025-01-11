@@ -29,3 +29,4 @@ Weekend development notes for Pyxis.
 - 2024-12-29: docs: expand web UI and Dex setup notes
 - 2025-01-04: chore: weekend maintenance pass
 - 2025-01-05: fix: improve namespace explorer edge cases
+- 2025-01-11: feat: polish cluster overview rings and insights
