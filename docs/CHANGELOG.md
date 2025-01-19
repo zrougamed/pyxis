@@ -31,3 +31,4 @@ Weekend development notes for Pyxis.
 - 2025-01-05: fix: improve namespace explorer edge cases
 - 2025-01-11: feat: polish cluster overview rings and insights
 - 2025-01-18: docs: clarify Commons Clause sales restriction
+- 2025-01-19: test: broaden fake client coverage for ops helpers
