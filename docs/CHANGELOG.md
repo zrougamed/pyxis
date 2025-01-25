@@ -32,3 +32,4 @@ Weekend development notes for Pyxis.
 - 2025-01-11: feat: polish cluster overview rings and insights
 - 2025-01-18: docs: clarify Commons Clause sales restriction
 - 2025-01-19: test: broaden fake client coverage for ops helpers
+- 2025-01-25: fix: drawer resize persistence in the web UI
