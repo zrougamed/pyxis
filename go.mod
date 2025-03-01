@@ -3,9 +3,9 @@ module github.com/zrougamed/pyxis
 go 1.24.0
 
 require (
-	github.com/charmbracelet/bubbles v0.18.0
-	github.com/charmbracelet/bubbletea v0.26.6
-	github.com/charmbracelet/lipgloss v0.12.1
+	github.com/charmbracelet/bubbles v0.20.0
+	github.com/charmbracelet/bubbletea v1.3.4
+	github.com/charmbracelet/lipgloss v1.1.0
 	github.com/gorilla/websocket v1.5.0
 	github.com/spf13/cobra v1.9.1
 	golang.org/x/oauth2 v0.23.0
