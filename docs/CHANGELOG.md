@@ -48,3 +48,4 @@ Weekend development notes for Pyxis.
 - 2025-03-22: perf: reduce unnecessary list refreshes in TUI
 - 2025-03-23: docs: expand web UI and Dex setup notes
 - 2025-03-30: chore: weekend maintenance pass
+- 2025-04-05: fix: improve namespace explorer edge cases
