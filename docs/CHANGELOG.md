@@ -57,3 +57,4 @@ Weekend development notes for Pyxis.
 - 2025-05-11: fix: stabilize metrics gauges under missing metrics-server
 - 2025-05-17: perf: reduce unnecessary list refreshes in TUI
 - 2025-05-18: docs: expand web UI and Dex setup notes
+- 2025-05-24: chore: weekend maintenance pass
