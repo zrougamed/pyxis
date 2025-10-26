@@ -90,3 +90,4 @@ Weekend development notes for Pyxis.
 - 2025-10-18: chore: weekend maintenance pass
 - 2025-10-19: fix: improve namespace explorer edge cases
 - 2025-10-25: feat: polish cluster overview rings and insights
+- 2025-10-26: docs: clarify Commons Clause sales restriction
