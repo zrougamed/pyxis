@@ -104,3 +104,4 @@ Weekend development notes for Pyxis.
 - 2025-12-14: test: broaden fake client coverage for ops helpers
 - 2025-12-20: fix: drawer resize persistence in the web UI
 - 2025-12-21: refactor: tidy TUI navigation and keybindings
+- 2025-12-27: fix: stabilize metrics gauges under missing metrics-server
