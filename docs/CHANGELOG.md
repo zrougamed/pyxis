@@ -116,3 +116,4 @@ Weekend development notes for Pyxis.
 - 2026-02-07: refactor: tidy TUI navigation and keybindings
 - 2026-02-14: fix: stabilize metrics gauges under missing metrics-server
 - 2026-02-21: perf: reduce unnecessary list refreshes in TUI
+- 2026-02-22: docs: expand web UI and Dex setup notes
