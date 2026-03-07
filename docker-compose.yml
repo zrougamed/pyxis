@@ -1,0 +1,50 @@
+services:
+  dex:
+    image: ghcr.io/dexidp/dex:v2.41.1
+    command: ["dex", "serve", "/etc/dex/config.yaml"]
+    volumes:
+      - ./deploy/dex/config.compose.yaml:/etc/dex/config.yaml:ro
+    ports:
+      - "5556:5556"
+
+  pyxis:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VERSION: docker-compose
+    depends_on:
+      - dex
+    environment:
+      PYXIS_KUBECONFIG: ${PYXIS_KUBECONFIG:-/root/.kube/config}
+      PYXIS_BASE_URL: ${PYXIS_BASE_URL:-http://localhost:8080}
+      PYXIS_COOKIE_SECRET: ${PYXIS_COOKIE_SECRET:-change-me-dev-secret}
+      PYXIS_DEX_PUBLIC_ISSUER: ${PYXIS_DEX_PUBLIC_ISSUER:-http://localhost:5556/dex}
+      PYXIS_CONTEXT: ${PYXIS_CONTEXT:-}
+      PYXIS_NAMESPACE: ${PYXIS_NAMESPACE:-}
+    command:
+      - web
+      - --listen
+      - :8080
+      - --kubeconfig
+      - ${PYXIS_KUBECONFIG:-/root/.kube/config}
+      - --base-url
+      - ${PYXIS_BASE_URL:-http://localhost:8080}
+      - --cookie-secret
+      - ${PYXIS_COOKIE_SECRET:-change-me-dev-secret}
+      - --dex-issuer
+      - http://dex:5556/dex
+      - --dex-public-issuer
+      - ${PYXIS_DEX_PUBLIC_ISSUER:-http://localhost:5556/dex}
+      - --dex-client-id
+      - pyxis
+      - --dex-client-secret
+      - pyxis-secret
+      - --context
+      - ${PYXIS_CONTEXT:-}
+      - --namespace
+      - ${PYXIS_NAMESPACE:-}
+    volumes:
+      - ${HOME}/.kube:/root/.kube:ro
+    ports:
+      - "8080:8080"
