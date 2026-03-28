@@ -1,0 +1,21 @@
+issuer: http://localhost:5556/dex
+storage:
+  type: memory
+web:
+  http: 0.0.0.0:5556
+telemetry:
+  http: 0.0.0.0:5558
+
+staticClients:
+  - id: pyxis
+    redirectURIs:
+      - http://localhost:9090/oauth/callback
+    name: Pyxis
+    secret: pyxis-secret
+
+enablePasswordDB: true
+staticPasswords:
+  - email: admin@example.com
+    hash: "$2b$12$cd08NKPKzlvqmPn1T76ofuphVywUAwheUxK8bKDijT/ajCrcCU3GS" # admin
+    username: admin
+    userID: 08a8684b-db88-4b73-90a9-3cd1661f5466
