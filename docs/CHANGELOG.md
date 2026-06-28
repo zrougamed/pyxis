@@ -142,3 +142,4 @@ Weekend development notes for Pyxis.
 - 2026-06-14: feat: polish cluster overview rings and insights
 - 2026-06-20: docs: clarify Commons Clause sales restriction
 - 2026-06-21: test: broaden fake client coverage for ops helpers
+- 2026-06-28: fix: drawer resize persistence in the web UI
