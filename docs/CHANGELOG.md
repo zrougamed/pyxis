@@ -143,3 +143,4 @@ Weekend development notes for Pyxis.
 - 2026-06-20: docs: clarify Commons Clause sales restriction
 - 2026-06-21: test: broaden fake client coverage for ops helpers
 - 2026-06-28: fix: drawer resize persistence in the web UI
+- 2026-07-04: refactor: tidy TUI navigation and keybindings
