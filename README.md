@@ -8,8 +8,8 @@
 
 ![Go 1.26](https://img.shields.io/badge/Go-1.26.5-00ADD8?logo=go)
 ![License](https://img.shields.io/badge/License-Apache%202.0%20%2B%20Commons%20Clause-blue)
-[![CI](https://github.com/zrougamed/kube-swiss-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/zrougamed/kube-swiss-cli/actions/workflows/ci.yml)
-[![Release](https://github.com/zrougamed/kube-swiss-cli/actions/workflows/release.yml/badge.svg)](https://github.com/zrougamed/kube-swiss-cli/actions/workflows/release.yml)
+[![CI](https://github.com/zrougamed/pyxis/actions/workflows/ci.yml/badge.svg)](https://github.com/zrougamed/pyxis/actions/workflows/ci.yml)
+[![Release](https://github.com/zrougamed/pyxis/actions/workflows/release.yml/badge.svg)](https://github.com/zrougamed/pyxis/actions/workflows/release.yml)
 
 > **License note:** Apache License 2.0 **with Commons Clause** — free to use, modify, and share; selling Pyxis (or a product whose value derives substantially from it) is not permitted. See [`LICENSE`](./LICENSE) and [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
@@ -41,13 +41,13 @@ go install github.com/zrougamed/pyxis/cmd@latest
 
 ### Prebuilt binaries
 
-Download the latest release assets from [GitHub Releases](https://github.com/zrougamed/kube-swiss-cli/releases) (linux / darwin / windows, amd64 & arm64).
+Download the latest release assets from [GitHub Releases](https://github.com/zrougamed/pyxis/releases) (linux / darwin / windows, amd64 & arm64).
 
 ### Build locally
 
 ```bash
-git clone https://github.com/zrougamed/kube-swiss-cli.git
-cd kube-swiss-cli
+git clone https://github.com/zrougamed/pyxis.git
+cd pyxis
 make build
 ./bin/pyxis
 ```
@@ -235,7 +235,7 @@ make test          # Verify everything still works
 
 | Pyxis | client-go | Kubernetes |
 |-------|-----------|------------|
-| main  | v0.32.x   | 1.32.x     |
+| main  | v0.36.x   | 1.36.x     |
 
 The `client-go` library maintains a [compatibility policy](https://github.com/kubernetes/client-go#compatibility-matrix): each client-go version supports ±1 Kubernetes minor version. To support a new Kubernetes release, bump the `k8s.io/*` dependencies in `go.mod`.
 

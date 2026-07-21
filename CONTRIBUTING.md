@@ -19,8 +19,8 @@ Requirements:
 - `make` and Docker (optional, for Compose / release smoke checks)
 
 ```bash
-git clone https://github.com/zrougamed/kube-swiss-cli.git
-cd kube-swiss-cli
+git clone https://github.com/zrougamed/pyxis.git
+cd pyxis
 make test
 make build
 ./bin/pyxis version
