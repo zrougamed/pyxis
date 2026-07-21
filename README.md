@@ -9,7 +9,7 @@
 ![Go 1.26](https://img.shields.io/badge/Go-1.26.5-00ADD8?logo=go)
 ![License](https://img.shields.io/badge/License-Apache%202.0%20%2B%20Commons%20Clause-blue)
 [![CI](https://github.com/zrougamed/pyxis/actions/workflows/ci.yml/badge.svg)](https://github.com/zrougamed/pyxis/actions/workflows/ci.yml)
-[![Release](https://github.com/zrougamed/pyxis/actions/workflows/release.yml/badge.svg)](https://github.com/zrougamed/pyxis/actions/workflows/release.yml)
+[![Release](https://img.shields.io/github/v/release/zrougamed/pyxis?label=release)](https://github.com/zrougamed/pyxis/releases)
 
 > **License note:** Apache License 2.0 **with Commons Clause** — free to use, modify, and share; selling Pyxis (or a product whose value derives substantially from it) is not permitted. See [`LICENSE`](./LICENSE) and [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
