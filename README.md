@@ -13,6 +13,21 @@
 
 > **License note:** Apache License 2.0 **with Commons Clause** — free to use, modify, and share; selling Pyxis (or a product whose value derives substantially from it) is not permitted. See [`LICENSE`](./LICENSE) and [`CONTRIBUTING.md`](./CONTRIBUTING.md).
 
+## Pyxis in action
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>TUI / CLI</strong><br>
+      <img src="assets/pyxis-cli.gif" alt="Pyxis TUI in action" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <strong>Web UI</strong><br>
+      <img src="assets/pyxis-web.gif" alt="Pyxis web dashboard in action" width="100%">
+    </td>
+  </tr>
+</table>
+
 ## Features
 
 - **Fuzzy search pods** — type part of a pod name and instantly filter
@@ -264,6 +279,12 @@ make compose-dex     # Run only Dex in Docker Compose
 ```
 
 Tests use `k8s.io/client-go/kubernetes/fake` for Kubernetes API mocking — no cluster needed.
+
+For a local kind cluster with sample workloads (demos / recordings), see [`docs/kind-demo.md`](docs/kind-demo.md) and run `./scripts/kind-demo-up.sh`.
+
+## Roadmap
+
+Planned work (explain mode, relationship graph, blast radius, audit log, and more) is tracked in [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
 ## Contributing
 
